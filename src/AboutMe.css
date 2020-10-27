@@ -1,0 +1,192 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.aboutText {
+}
+.profileDetails img {
+  width: 7vw;
+  max-width: 50px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+}
+.profileCard {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1vh 2vw;
+  width: 90vw;
+  min-height: 20vh;
+  border: 2px solid lightgray;
+  border-radius: 5% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+  position: relative;
+  top: 37vh;
+  margin-bottom: 37vh;
+  box-shadow: 0 1px 6px 1px rgb(59, 59, 59);
+}
+.detailsText {
+  text-align: left;
+  align-self: center;
+  width: 80vw;
+  margin-top: 1%;
+}
+
+.profileDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+.profileNav {
+  color: whitesmoke;
+  background: rgb(75, 75, 75);
+  margin: 0 auto 3vh;
+  padding: 1.5vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  align-self: flex-end;
+}
+.imageBg {
+  border: 2px solid grey;
+  width: 100vw;
+  min-height: 30vh;
+  max-height: 60vh;
+  position: absolute;
+  top: 8vh;
+  z-index: -11;
+  overflow: hidden;
+
+  filter: grayscale(0.2) contrast(69%) hue-rotate(20deg);
+
+  border-radius: 0 0 5% 5%;
+}
+.imageBg img {
+  width: 100vw;
+
+  overflow: hidden;
+}
+.navBurger {
+  background-color: rgb(0, 95, 173);
+  position: fixed;
+  top: 0vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  color: #ffffff;
+
+  clip-path: circle(00px at 50px -100px);
+  -webkit-clip-path: circle(00px at 50px -100px);
+  transition: all 0.5s ease-out;
+}
+
+.navBurger.open {
+  clip-path: circle(800px at 50px -100px);
+  -webkit-clip-path: circle(800px at 50px -100px);
+  display: block;
+}
+
+.navBurger ul {
+  font-size: 15px;
+  padding: 0;
+  padding-left: 20px;
+  width: 70%;
+  margin: 8.6vh 0;
+
+  display: flex;
+  flex-direction: column;
+}
+.navBurger ul h5 {
+  margin-top: 20px;
+}
+.navBurger ul li {
+  text-align: left;
+  margin-top: 2vh;
+  margin-left: 10px;
+}
+.navBurger ul a {
+  color: #ffffff;
+}
+.navigation {
+  margin-top: 5vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigation a {
+  border: 1px solid goldenrod;
+  border-radius: 200px;
+  padding: 2px 8px;
+  color: rgb(56, 56, 56);
+  background: rgb(255, 240, 203);
+  font-weight: 600;
+  font-style: oblique;
+  text-decoration: none;
+}
+.navigation a:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 944px) {
+  .detailsText {
+    width: 90%;
+    align-self: flex-start;
+    font-size: 0.9rem;
+    margin-top: 1vh;
+  }
+  .profileCard {
+    top: 28vh;
+    margin-bottom: 28vh;
+  }
+  .imageBg {
+  }
+}
+@media screen and (max-width: 700px) {
+  .imageBg {
+    top: 9vh;
+  }
+}
+@media screen and (max-width: 835px) {
+  .profileCard {
+    width: 100vw;
+    min-height: 50vh;
+    justify-content: flex-start;
+    top: 28vh;
+    margin-bottom: 28vh;
+  }
+}
+@media screen and (max-width: 577px) {
+  .profileCard {
+    width: 100vw;
+    min-height: 50vh;
+    justify-content: flex-start;
+    top: 23vh;
+    margin-bottom: 23vh;
+  }
+  .profileDetails {
+    margin-top: 2vh;
+  }
+  .aboutText {
+    font-size: 0.8rem;
+  }
+  .detailsText {
+    width: 90%;
+    align-self: center;
+    font-size: 0.7rem;
+    margin-top: 2vh;
+  }
+}

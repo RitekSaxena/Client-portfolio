@@ -1,0 +1,112 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.experience h1 {
+  margin-top: 25px;
+  margin-bottom: -20px;
+  color: #000000;
+  letter-spacing: 0.06em;
+}
+
+.workCard ul {
+  text-align: center;
+  margin: 5%;
+}
+.workCard ul li {
+  margin: 2%;
+}
+
+.logos {
+  width: 180px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+}
+.workCard ul img {
+  width: 100%;
+  height: 100%;
+}
+
+.Carousel-cards {
+  max-width: 100vw !important;
+  overflow-x: hidden;
+
+  min-height: 40vh !important;
+  padding-bottom: 3vh;
+}
+.workCard {
+  padding: 2vh 0;
+  border-radius: 5%;
+
+  margin: 2vh 3vw;
+  flex-shrink: 0;
+  box-shadow: 0px 1px 4px 1px rgb(124, 119, 50);
+  width: 70vw;
+  height: 400px;
+  background-color: rgba(218, 165, 32, 0.253);
+}
+.intern {
+  box-shadow: 0px 1px 4px 1px rgb(124, 119, 50);
+  background-color: rgba(218, 165, 32, 0.253);
+}
+
+.rec-dot {
+  background-color: rgb(255, 190, 24) !important;
+  outline: goldenrod !important;
+}
+.rec-carousel-wrapper {
+  width: 87vw !important;
+  min-height: 20vh !important;
+}
+.rec-arrow {
+  margin: 0 2px !important;
+  background-color: rgba(218, 165, 32, 0.5) !important;
+  color: rgb(0, 0, 0) !important;
+}
+.brcpxa {
+  box-shadow: 0 0 3px 4px goldenrod !important;
+}
+@media screen and (max-width: 1193px) {
+  .workCard {
+    width: 90vw;
+  }
+  .rec-arrow {
+    display: none !important;
+  }
+  .Carousel-cards {
+    max-width: 100vw !important;
+    overflow-x: hidden;
+    width: 99vw !important;
+    position: relative !important;
+    top: 40px !important;
+  }
+  .experience h1 {
+    font-size: 1.4rem;
+  }
+  .rec-carousel-wrapper {
+    width: 97vw !important;
+    min-height: 20vh !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .workCard {
+    font-size: 0.9rem;
+    min-height: 20vh;
+    padding: 2vh 2vw;
+  }
+  .workCard h3 {
+    font-size: 1.1rem;
+  }
+  .workCard h5 {
+    font-size: 0.95rem;
+  }
+}
